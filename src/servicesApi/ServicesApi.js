@@ -6,18 +6,18 @@ const servicesApi = [
   },
   {
     icon: "fas fa-window-maximize",
-    heading: "Web Designing",
-    text: "A complete web app design solution for business using SCSS3, Bootstrap, Semantic UI",
+    heading: "HTML Conversion",
+    text: "A complete conversion solution of your Adop xd, figma, psd or sketch design to HTML, CSS3, SCSS, Bootstrap5 and ReactJS code",
   },
   {
     icon: "fas fa-code",
     heading: "Front-end Web development",
-    text: "Front-end Web development service is provided with Technologies, HTML5, Bootstrap, JavaScript ",
+    text: "Front-end Web development service is provide with Technologies like HTML5, Bootstrap5, Sass and JavaScript ",
   },
   {
     icon: "fab fa-wordpress",
     heading: "Wordpress Development",
-    text: "Provides service of WordPress development that is the most widely used and powerful Content Management system plateform",
+    text: "Provide the service of WordPress development which is the most widely used and powerful Content Management system Currently",
   },
 ];
 

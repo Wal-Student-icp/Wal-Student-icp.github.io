@@ -74,7 +74,7 @@ const NavigationBar = () => {
               {navLinks.map((l, index) => {
                 const { name, link } = l;
                 return (
-                  <li className="nav-item active" id="about">
+                  <li className="nav-item" id="about" key={index}>
                     <NavLink className="nav-link" to={link}>
                       {name}
                     </NavLink>

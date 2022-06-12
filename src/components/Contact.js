@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [userData, setUserData] = useState({
@@ -48,12 +47,25 @@ const Contact = () => {
             subject: "",
             message: "",
           });
-          toast.success("Your feedback has been saved successfully...");
+          Swal.fire(
+            "Message Saved!",
+            "Thanks for Contacting Me! I will get back to you soon!",
+            "success"
+          );
         } else {
-          toast.error("Your feedback is not saved, Pleae send again!");
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Your feedback is not saved, Pleae try again!",
+          });
         }
       } else {
-        toast.error("Please fill out all the input correctly...");
+        Swal.fire({
+          title: "Error!",
+          text: "Please fill out all the input correctly!!!",
+          icon: "error",
+          confirmButtonText: "Cool",
+        });
       }
     } catch (error) {
       console.log("Error: " + error);
@@ -68,7 +80,7 @@ const Contact = () => {
           <div className="col-md-12 col-lg-5 contactRowCol1">
             <div className="row contactInnerRow">
               <div className="col-1 col-lg-1">
-                <i class="fas fa-envelope-open-text"></i>
+                <i className="fas fa-envelope-open-text"></i>
               </div>
               <div className="col-1 col-lg-11 contactInnerRowCol2">
                 <p>
@@ -79,7 +91,7 @@ const Contact = () => {
             </div>
             <div className="row contactInnerRow">
               <div className="col-1 col-lg-1">
-                <i class="fas fa-mobile-alt"></i>
+                <i className="fas fa-mobile-alt"></i>
               </div>
               <div className="col-11 col-lg-11 contactInnerRowCol2">
                 <p>
@@ -90,7 +102,7 @@ const Contact = () => {
             </div>
             <div className="row contactInnerRow">
               <div className="col-1">
-                <i class="fab fa-skype"></i>
+                <i className="fab fa-skype"></i>
               </div>
               <div className="col-11 contactInnerRowCol2">
                 <p>
@@ -151,7 +163,6 @@ const Contact = () => {
           </form>
         </div>
       </section>
-      <ToastContainer />
     </>
   );
 };

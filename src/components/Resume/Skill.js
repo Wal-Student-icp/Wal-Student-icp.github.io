@@ -12,9 +12,9 @@ const Skill = () => {
           {skills.map((rec, index) => {
             const { skill, percentage, value } = rec;
             return (
-              <div className="col-12 col-lg-6 skillsRowCol">
+              <div className="col-12 col-lg-6 skillsRowCol" key={index}>
                 <label
-                  for={skill}
+                  htmlFor={skill}
                   className="row d-flex flex-row justify-content-between"
                 >
                   <p className="col-6">{skill}</p>

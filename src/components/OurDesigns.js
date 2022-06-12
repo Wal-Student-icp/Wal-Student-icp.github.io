@@ -24,7 +24,7 @@ const OurDesigns = () => {
             <p className="approchPara">my projects</p>
             <h2>
               <strong>Have a look at my latest Designs,</strong> <br />
-              that I made with core of my ❤
+              which I made with core of my ❤
             </h2>
             <p>
               Received a lot of positive feedback on the designs that I created

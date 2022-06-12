@@ -5,24 +5,27 @@ import Typical from "react-typical";
 const TrustedName = () => {
   return (
     <>
-      <section>
+      <div>
         <Row className="TrustedNameRow">
           <Col className="TrustedNameCol1">
-            <h1 className="display-6">
-              <strong className="strong">Wali Ullah</strong> <br />
+            <div className="display-6">
+              <strong className="strong" style={{ fontWeight: "700" }}>
+                Wali Ullah
+              </strong>{" "}
+              <br />
               <Typical
                 loop={Infinity}
                 steps={[
                   "Front-end Web developer 😎",
                   1000,
-                  "Web Designer ;-)",
-                  1000,
                   "ReactJS Developer 🎈",
+                  1000,
+                  "MERN stack developer ;-)",
                   1000,
                 ]}
                 wrapper="h3"
               />
-            </h1>
+            </div>
             <p>
               A passionate web developer and designer focused on developing
               features to enhance the user experience and help businesses do
@@ -37,12 +40,12 @@ const TrustedName = () => {
           <Col className="TrustedNameCol2">
             <img
               src="images/illustration.svg"
-              alt="Main Image"
+              alt="Man With Computer"
               className="img-fluid image"
             />
           </Col>
         </Row>
-      </section>
+      </div>
     </>
   );
 };

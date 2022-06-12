@@ -13,7 +13,7 @@ const Services = () => {
               <strong>What I do!</strong>
             </h2>
             <p>
-              I provide the web development and Designing Services with the most
+              Provide the web development and Designing Services with the most
               advance Technologies and tools that used to be develop a stunning
               website for your business.
             </p>

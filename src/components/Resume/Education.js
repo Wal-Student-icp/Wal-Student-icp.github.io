@@ -6,14 +6,14 @@ const Education = () => {
 
   return (
     <>
-      <div class="education" id="resumeEducation">
+      <div className="education" id="resumeEducation">
         <h4>Education</h4>
         {education.map((data, index) => {
           const { icon, completionDate, degree, Institute, description } = data;
           return (
-            <div className="row educationRow d-flex flex-row gx-0">
+            <div className="row educationRow d-flex flex-row gx-0" key={index}>
               <div className="col-1 col-lg-1">
-                <i class={icon}></i>
+                <i className={icon}></i>
               </div>
               <div className="col-11 col-lg-11 educationRowCol">
                 <h6>{completionDate}</h6>

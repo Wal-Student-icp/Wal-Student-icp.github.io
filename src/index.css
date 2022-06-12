@@ -39,20 +39,19 @@ p {
   font-size: 16px;
   color: var(--textColor);
   text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
-.NavRow .nav-item a:hover {
+.NavRow .nav-item a:hover,
+.active {
   color: var(--primaryColor) !important;
-  /* border-bottom: 1px solid var(--primaryColor); */
+  border-bottom: 1px solid var(--primaryColor);
 }
-
 .navbarBg {
   background-color: var(--bgColor);
 }
-.active {
-  color: var(--primaryColor) !important;
-}
 
-/******************* Trusted Name ********************/
+/******************* Trusted Name | Main ********************/
 .TrustedNameRow {
   width: 100%;
   display: flex;
@@ -86,7 +85,11 @@ p {
   font-size: 17px;
   font-weight: 500;
   outline: none;
+  box-shadow: none !important;
   background-color: var(--primaryColor);
+}
+.primaryBtn:active {
+  background-color: var(--primaryColor) !important;
 }
 
 .TrustedNameCol1 .primaryBtn:hover,
@@ -456,6 +459,8 @@ p {
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid var(--primaryColor);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .contactInnerRow i:hover {
   color: white;
@@ -526,7 +531,6 @@ form input:focus {
   padding: 0px 0;
 }
 .FooterCol {
-  /* margin-left: 50px; */
   padding: 0 50px;
   margin-right: 10px;
 }
@@ -558,6 +562,7 @@ form input:focus {
   margin: 0 13px;
   font-size: 20px;
   color: var(--textColor);
+  transition: 0.2s ease-in-out;
 }
 .social svg:hover {
   color: var(--primaryColor);

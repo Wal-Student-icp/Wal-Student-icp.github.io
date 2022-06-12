@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="bottomFooter d-flex flex-row flex-wrap justify-content-between align-items-center">
-          <p>Copyright © 2021. All rights reserved.</p>
+          <p>Copyright © 2022. All rights reserved.</p>
           <div className="social">
             <a
               href="https://www.facebook.com/profile.php?id=100052034914712"

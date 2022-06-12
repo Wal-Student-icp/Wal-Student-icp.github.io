@@ -23,7 +23,6 @@ p {
   padding: 8px 50px;
   width: 100%;
   background-color: #fff;
-  /* background-color: var(--bgColor); */
 }
 .navbar-light .navbar-brand {
   font-size: 27px;
@@ -34,16 +33,23 @@ p {
   position: relative;
 }
 
-.NavRow .nav-link {
-  margin: 0 10px;
+.NavRow .nav-item a {
+  margin: 0 15px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
+  color: var(--textColor);
+  text-decoration: none;
 }
-.NavRow .nav-link:hover {
-  color: var(--primaryColor);
+.NavRow .nav-item a:hover {
+  color: var(--primaryColor) !important;
+  /* border-bottom: 1px solid var(--primaryColor); */
 }
+
 .navbarBg {
   background-color: var(--bgColor);
+}
+.active {
+  color: var(--primaryColor) !important;
 }
 
 /******************* Trusted Name ********************/
@@ -483,7 +489,7 @@ form textarea {
   width: 100%;
   padding: 12px 15px;
   border: 1px solid var(--textColor);
-  border-radius: 25px;
+  border-radius: 20px;
   font-size: 13px;
   font-weight: lighter;
   outline: none;
@@ -493,7 +499,7 @@ form input:focus {
   border: 1px solid var(--primaryColor);
 }
 .contactRowCol2 .primaryBtn {
-  border-radius: 30px;
+  border-radius: 25px;
   font-size: 16px;
   padding: 12px 35px;
   font-weight: normal;

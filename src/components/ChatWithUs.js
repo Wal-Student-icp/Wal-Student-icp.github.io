@@ -11,12 +11,12 @@ const ChatWithUs = () => {
             <strong>Hire Me!</strong> <br /> ‍
           </h2>
           <p>
-            I can do the work and deliver you exceptional results, I belive that
-            the combination of my Skills and Hard work make the work easy for
-            me.
+            I can do your work and deliver you exceptional results. I belive
+            that the combination of my Skills and Hard work make the work easy
+            for me.
           </p>
           <div className="d-flex flex-row flex-wrap justify-content-between fw-lighter">
-            <p>+923038175044</p>
+            <p>+92 3038175044</p>
             <p>waliullah0540@gmail.com</p>
           </div>
           <Link to="contact">

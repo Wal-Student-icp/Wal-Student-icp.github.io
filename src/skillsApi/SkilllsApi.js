@@ -1,28 +1,28 @@
 const SkillsApi = [
   {
-    skill: "HTML5",
-    percentage: "95%",
-    value: "95",
+    skill: "HTML5 | CSS3 | SCSS",
+    percentage: "90%",
+    value: "90",
   },
   {
-    skill: "CSS3",
-    percentage: "85%",
-    value: "85",
-  },
-  {
-    skill: "Bootstrap",
+    skill: "Bootstrap5",
     percentage: "80%",
     value: "80",
   },
   {
     skill: "ReactJS",
-    percentage: "70%",
+    percentage: "80%",
     value: "70",
   },
   {
-    skill: "Photoshop",
-    percentage: "60%",
-    value: "60",
+    skill: "NodeJS",
+    percentage: "65%",
+    value: "65",
+  },
+  {
+    skill: "JavaScript",
+    percentage: "70%",
+    value: "70",
   },
   {
     skill: "WordPress",

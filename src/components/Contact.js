@@ -95,7 +95,7 @@ const Contact = () => {
               <div className="col-11 contactInnerRowCol2">
                 <p>
                   Skype <br />
-                  <span>My Skype</span>
+                  <span>https://join.skype.com/invite/wTRTyUx7aPfQ</span>
                 </p>
               </div>
             </div>

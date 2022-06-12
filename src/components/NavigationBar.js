@@ -1,5 +1,33 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "../index.css";
+
+const navLinks = [
+  {
+    name: "Home",
+    link: "/home",
+  },
+  {
+    name: "Services",
+    link: "/services",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Resume",
+    link: "/resume",
+  },
+  {
+    name: "Works",
+    link: "/works",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
 
 const NavigationBar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -43,41 +71,16 @@ const NavigationBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item" id="about">
-                <Link className="nav-link active" aria-current="page" to="home">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item" id="usecase">
-                <Link className="nav-link" to="services">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item" id="products">
-                <Link
-                  className="nav-link"
-                  to="about"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="nav-item" id="builders">
-                <Link className="nav-link" to="resume">
-                  Resume
-                </Link>
-              </li>
-              <li className="nav-item" id="builders">
-                <Link className="nav-link" to="works">
-                  Works
-                </Link>
-              </li>
-              <li className="nav-item" id="builders">
-                <Link className="nav-link" to="contact">
-                  Contact
-                </Link>
-              </li>
+              {navLinks.map((l, index) => {
+                const { name, link } = l;
+                return (
+                  <li className="nav-item active" id="about">
+                    <NavLink className="nav-link" to={link}>
+                      {name}
+                    </NavLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

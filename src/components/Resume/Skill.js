@@ -8,7 +8,7 @@ const Skill = () => {
     <>
       <div className="skills" id="resumeSkills">
         <h4>Skills</h4>
-        <div className="row skillsRow">
+        <div className="row skillsRow gx-0">
           {skills.map((rec, index) => {
             const { skill, percentage, value } = rec;
             return (

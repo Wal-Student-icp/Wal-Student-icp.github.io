@@ -11,7 +11,7 @@ const Education = () => {
         {education.map((data, index) => {
           const { icon, completionDate, degree, Institute, description } = data;
           return (
-            <div className="row no-gutters educationRow d-flex flex-row">
+            <div className="row educationRow d-flex flex-row gx-0">
               <div className="col-1 col-lg-1">
                 <i class={icon}></i>
               </div>
@@ -22,7 +22,6 @@ const Education = () => {
                   <br></br>
                   <span>{Institute}</span>
                 </h5>
-                {/* <span></span> */}
                 <p className="m-0 p-0">{description}</p>
               </div>
             </div>

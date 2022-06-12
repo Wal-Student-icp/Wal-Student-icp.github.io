@@ -34,7 +34,6 @@ const Home = () => {
           {/* Back to top */}
         </span>
       </BackToTop>
-      );
     </>
   );
 };

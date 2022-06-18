@@ -85,7 +85,6 @@ p {
   font-size: 17px;
   font-weight: 500;
   outline: none;
-  box-shadow: none !important;
   background-color: var(--primaryColor);
 }
 .primaryBtn:active {
@@ -101,6 +100,13 @@ p {
   transition: 0.3s;
   transition-timing-function: ease-out;
   background-color: #544bff;
+}
+.TrustedNameCol1 .primaryBtn:focus,
+.caseStudiesSecondCol .primaryBtn:focus,
+.chat .primaryBtn:focus,
+.contact .primaryBtn:focus,
+.menuButton:focus {
+  box-shadow: none;
 }
 
 .reviews {

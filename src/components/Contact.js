@@ -64,7 +64,7 @@ const Contact = () => {
           title: "Error!",
           text: "Please fill out all the input correctly!!!",
           icon: "error",
-          confirmButtonText: "Cool",
+          confirmButtonText: "Okay",
         });
       }
     } catch (error) {

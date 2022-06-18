@@ -52,7 +52,7 @@ const NavigationBar = () => {
         <div className="container-fluid">
           <Link className="navbar-brand NavbarBrand" to="home">
             <img
-              src="images/logo.png"
+              src="images/Logo.png"
               alt="Logo"
               width={"80px"}
               height={"60px"}

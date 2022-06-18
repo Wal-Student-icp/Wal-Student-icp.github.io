@@ -50,6 +50,17 @@ p {
 .navbarBg {
   background-color: var(--bgColor);
 }
+.navbar-light .navbar-toggler {
+  border-color: var(--primaryColor) !important;
+  padding: 3px 7px;
+}
+.navbar-light .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  width: 1.2em !important;
+  height: 1.2em !important;
+}
 
 /******************* Trusted Name | Main ********************/
 .TrustedNameRow {
@@ -309,6 +320,7 @@ p {
 }
 .Resume .ResumeRow {
   width: 100%;
+  --bs-gutter-x: 0;
 }
 .ResumeRow .ResumeRowCol1 {
   position: relative;
@@ -350,11 +362,16 @@ p {
 .resumeMenu ul li a:hover {
   color: var(--primaryColor);
 }
+.education,
+.award,
+.skills {
+  padding: 10px !important;
+}
 .educationRow,
 .awardRow {
   width: 100%;
   text-align: left;
-  padding: 45px 20px;
+  padding: 45px 15px 45px 0 !important;
   margin: 30px 0;
   background-color: var(--bgColor);
   box-shadow: 0 0 2px lightblue;
@@ -364,6 +381,8 @@ p {
 .awardRow i {
   color: white;
   background-color: rgb(121, 121, 253);
+  margin-bottom: 20px !important;
+  margin-left: 20px !important;
 }
 .educationRow .educationRowCol,
 .awardRow .awardRowCol {
@@ -421,6 +440,7 @@ p {
   text-align: center;
   color: white;
   background-color: #0d2350;
+  padding: 0 10px;
 }
 .chatContent {
   width: 100%;
@@ -483,6 +503,7 @@ p {
 }
 .contactInnerRowCol2 p {
   color: black;
+  /* word-break: break-all; */
 }
 .contactInnerRowCol2 p span {
   font-size: 14px;
@@ -788,6 +809,9 @@ form input:focus {
   }
 }
 @media only screen and (max-width: 490px) {
+  .NavRow {
+    padding: 3px 7px !important;
+  }
   .row {
     --bs-gutter-x: 0;
   }
@@ -869,6 +893,10 @@ form input:focus {
   .awardRow .awardRowCol {
     padding: 0 0 0 25px;
   }
+  .educationRow i,
+  .awardRow i {
+    margin-left: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -886,6 +914,13 @@ form input:focus {
   }
   .error404 p {
     font-size: 13px;
+  }
+  .educationRow .educationRowCol,
+  .awardRow .awardRowCol {
+    padding: 10px 0 0 25px;
+  }
+  .skype-ref {
+    word-wrap: break-word;
   }
 }
 

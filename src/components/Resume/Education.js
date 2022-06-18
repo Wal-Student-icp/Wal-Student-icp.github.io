@@ -12,10 +12,10 @@ const Education = () => {
           const { icon, completionDate, degree, Institute, description } = data;
           return (
             <div className="row educationRow d-flex flex-row gx-0" key={index}>
-              <div className="col-1 col-lg-1">
+              <div className="col-12 col-lg-1">
                 <i className={icon}></i>
               </div>
-              <div className="col-11 col-lg-11 educationRowCol">
+              <div className="col-12 col-lg-11 educationRowCol">
                 <h6>{completionDate}</h6>
                 <h5>
                   {degree}

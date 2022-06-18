@@ -35,8 +35,8 @@ const OurDesigns = () => {
           <div
             className={
               scrollEffect
-                ? "ourDesignTemplateSec row gx-0 ourDesignScrollEffect"
-                : "ourDesignTemplateSec row gx-0"
+                ? "ourDesignTemplateSec row gx-0 gx-md-4 gx-sm-3 ourDesignScrollEffect"
+                : "ourDesignTemplateSec row gx-0 gx-md-4 gx-sm-3"
             }
           >
             {designs.map((template) => {

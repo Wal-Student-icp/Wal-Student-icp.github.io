@@ -53,7 +53,7 @@ const NavigationBar = () => {
           <Link className="navbar-brand NavbarBrand" to="home">
             <img
               src="images/Logo.png"
-              alt="Logo"
+              alt="Wali Ullah"
               width={"80px"}
               height={"60px"}
             />

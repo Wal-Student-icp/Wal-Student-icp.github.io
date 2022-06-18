@@ -6,7 +6,7 @@ const TrustedName = () => {
   return (
     <>
       <div>
-        <Row className="TrustedNameRow">
+        <Row className="TrustedNameRow gx-2 gx-md-4">
           <Col className="TrustedNameCol1">
             <div className="display-6">
               <strong className="strong" style={{ fontWeight: "700" }}>

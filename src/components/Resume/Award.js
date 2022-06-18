@@ -6,10 +6,10 @@ const Award = () => {
       <div className="award" id="resumeAward">
         <h4>Awards</h4>
         <div className="row awardRow d-flex flex-row gx-0">
-          <div className="col-1 col-lg-1">
+          <div className="col-12 col-lg-1">
             <i className="fas fa-award"></i>
           </div>
-          <div className="col-11 col-lg-11 awardRowCol">
+          <div className="col-12 col-lg-11 awardRowCol">
             <h6>November 2021</h6>
             <h5>
               Best Performance
